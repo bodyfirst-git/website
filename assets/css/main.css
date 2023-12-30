@@ -740,6 +740,12 @@ section {
   color: #38618e;
 }
 
+.services-list .service-item .icon img {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
 .services-list .service-item .title {
   font-weight: 700;
   margin-bottom: 5px;
