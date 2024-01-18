@@ -1,0 +1,155 @@
+[
+  {
+    "Age Group": "Children 5-12 Years",
+    "Health Category": "Immune Health",
+    "Disease Condition": {
+      "1": "Auto Immune Disease",
+      "2": "Cold/Cough"
+    },
+
+    "Markers": "Inflammatory Markers  like CRP",
+    "Nutraceutical Ingredients": "Probiotics , Vitamin D3, MVM"
+  },
+
+  {
+    "Age Group": "Teenage 13-19 years",
+    "Health Category": "Immune Health",
+    "Disease Condition": {
+      "1": "Auto Immune Disease",
+      "2": "Cold/Cough"
+    },
+    "Markers": "Inflammatory Markers  like CRP",
+    "Nutraceutical Ingredients": "Probiotics, Cod Liver Oil, Zinc, Vitamin D3, Multivitamin"
+  },
+
+  {
+    "Age Group": "Adults 20-60 years",
+    "Health Category": "Immune Health",
+    "Disease Condition": "Auto Immune Disease",
+    "Markers": "Inflammatory Markers  like CRP",
+    "Nutraceutical Ingredients": "Probiotics, Cod Liver Oil, Zinc, Vitamin D3, Multivitamin, Omega 3 Fatty Acids, Astaxanthin, Vitamin C, Ashwagandha, Elderberry, Ginger, Garlic, Black Seed Oil, Curcumin"
+  },
+  {
+    "Disease Condition": "Cold/Cough"
+  },
+  {
+    "Age Group": "Senior Citizens - Above 60 Years",
+    "Health Category": "Immune Health",
+    "Disease Condition": "Auto Immune Disease",
+    "Markers": "Inflammatory Markers  like CRP",
+    "Nutraceutical Ingredients": "Probiotics, Cod Liver Oil, Zinc, Vitamin D3, Multivitamin, Omega 3 Fatty Acids, Astaxanthin, Vitamin C, Ashwagandha, Elderberry, Ginger, Garlic, Black Seed Oil, Magnesium, Curcumin"
+  },
+  {
+    "Disease Condition": "Cold/Cough"
+  },
+  null,
+  {
+    "Age Group": "Children 5-12 Years",
+    "Health Category": "Gut Health",
+    "Disease Condition": "Irritable Bowel Syndrome",
+    "Markers": "Bowel Movement Patterns",
+    "Nutraceutical Ingredients": "Probiotics"
+  },
+  {
+    "Disease Condition": "Diarrhoea",
+    "Markers": "Fecal leukocytes/calprotectin/lactoferrin"
+  },
+  {
+    "Age Group": "Teenage 13-19 years",
+    "Health Category": "Gut Health",
+    "Disease Condition": "Irritable Bowel Syndrome",
+    "Markers": "Bowel Movement Patterns",
+    "Nutraceutical Ingredients": "Probiotics, Fibre, Omega 3 Fatty Acids, Vitamin E, Glutamine, Ginger, Fenugreek Seed Extract"
+  },
+  {
+    "Disease Condition": "Diarrhoea",
+    "Markers": "Fecal leukocytes/calprotectin/lactoferrin"
+  },
+  {
+    "Disease Condition": "Ulcerative Colitis",
+    "Markers": "CRP"
+  },
+  {
+    "Age Group": "Adults 20-60 years",
+    "Health Category": "Gut Health",
+    "Disease Condition": "Irritable Bowel Syndrome",
+    "Markers": "Bowel Movement Patterns",
+    "Nutraceutical Ingredients": "Probiotics, Fibre, Omega 3 Fatty Acids, Vitamin E, Glutamine, Ginger, Fenugreek Seed Extract"
+  },
+  {
+    "Disease Condition": "Diarrhoea",
+    "Markers": "Fecal leukocytes/calprotectin/lactoferrin"
+  },
+  {
+    "Disease Condition": "Ulcerative Colitis",
+    "Markers": "CRP"
+  },
+  {
+    "Age Group": "Senior Citizens - Above 60 Years",
+    "Health Category": "Gut Health",
+    "Disease Condition": "Irritable Bowel Syndrome",
+    "Markers": "Bowel Movement Patterns",
+    "Nutraceutical Ingredients": "Probiotics, Fibre, Omega 3 Fatty Acids, Vitamin E, Glutamine, Ginger, Fenugreek Seed Extract"
+  },
+  {
+    "Disease Condition": "Diarrhoea",
+    "Markers": "Fecal leukocytes/calprotectin/lactoferrin"
+  },
+  {
+    "Disease Condition": "Ulcerative Colitis",
+    "Markers": "CRP"
+  },
+  null,
+  {
+    "Age Group": "Adults 20-60 years",
+    "Health Category": "Eye Health",
+    "Disease Condition": "Diabetic Retinopathy",
+    "Nutraceutical Ingredients": "Astaxanthin, Mixed Carotenoids, Fish Oils, Copper, Bilbery Exitract, Tocotrienols, Vitamin E, Lutein, Zeaxanthin"
+  },
+  null,
+  null,
+  {
+    "Age Group": "Senior Citizens - Above 60 Years",
+    "Health Category": "Eye Health",
+    "Disease Condition": "Diabetic Retinopathy",
+    "Markers": "Inflammation",
+    "Nutraceutical Ingredients": "Astaxanthin, Mixed Carotenoids, Fish Oils, Copper, Bilbery Exitract, Tocotrienols, Vitamin E, Lutein, Zeaxanthin"
+  },
+  {
+    "Disease Condition": "Cataract",
+    "Markers": "Visual Acuity, Macular Pigment Density"
+  },
+  null,
+  {
+    "Age Group": "Adults 20-60 years",
+    "Health Category": "Blood Sugar Management",
+    "Disease Condition": "Metabolic Diseases",
+    "Markers": "Blood Glucose Levels",
+    "Nutraceutical Ingredients": "Fenugreek Seed Extract, Cinnamon, Alpha Lipoic Acid, Chromium, Bitter Guard, Pectin, AloeVera Extract, Quercetin, Zinc"
+  },
+  null,
+  null,
+  {
+    "Age Group": "Senior Citizens - Above 60 Years",
+    "Health Category": "Blood Sugar Management",
+    "Disease Condition": "Metabolic Diseases",
+    "Markers": "Blood Glucose Levels",
+    "Nutraceutical Ingredients": "Fenugreek Seed Extract, Cinnamon, Alpha Lipoic Acid, Chromium, Bitter Guard, Pectin, AloeVera Extract, Quercetin, Zinc"
+  },
+  null,
+  {
+    "Age Group": "Adults 20-60 years",
+    "Health Category": "Stress Management",
+    "Disease Condition": "General Stress, Migraine",
+    "Markers": "Cortisol Levels",
+    "Nutraceutical Ingredients": "Magnesium, Ashwagandha, L Tryptophan, Rhodiola Rosea , Melatonin, Curcmin, Nutmeg, Cinnamon"
+  },
+  null,
+  {
+    "Age Group": "Senior Citizens - Above 60 Years",
+    "Health Category": "Stress Management",
+    "Disease Condition": "General Stress",
+    "Markers": "Cortisol Levels",
+    "Nutraceutical Ingredients": "Magnesium, Ashwagandha, L Tryptophan, Rhodiola Rosea , Melatonin, Curcmin, Nutmeg, Cinnamon"
+  }
+]
