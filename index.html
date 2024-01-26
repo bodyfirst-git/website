@@ -12,7 +12,7 @@
 
 
     <!-- main css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/Assets/css/style.css">
 
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -33,6 +33,7 @@
 </head>
 
 <body>
+
     <!-- ========header======== -->
 
 
@@ -40,7 +41,7 @@
     <header id="header" class="header d-flex align-center fixed-top">
         <div class="top-nav container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo">
-                <img src="./assets/imgs/logo/Nutraworks logo.png" alt="">
+                <img src="./Assets/img/home/logo/Nutraworks Logo.png" alt="Nutraworks Logo">
             </a>
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -51,10 +52,13 @@
                     <li class="dropdown"><a href="#"><span>About Us</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li><a href="#">Vision & Mission</a></li>
 
-                            <li><a href="#">Founder Story</a></li>
-                            <li><a href="">A Team</a></li>
+                            <li><a href="/founder-story.html">About Founder</a></li>
+
+                            <li><a href="/vision-mission.html">Vision & Mission</a></li>
+
+                            <li><a href="/founder-story.html">Founder Story</a></li>
+                            <li><a href="/a-team.html">A Team</a></li>
 
 
 
@@ -64,16 +68,16 @@
                     <li class="dropdown"><a href="#"><span>Business Model</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li><a href="#">D2C Works</a></li>
+                            <li><a href="/D2C.html">D2C Works</a></li>
 
-                            <li><a href="#">B2B Works</a></li>
-                            <li><a href="">Startup Mentors</a></li>
+                            <li><a href="/B2B.html">B2B Works</a></li>
+                            <li><a href="/start-up.html">Startup Mentors</a></li>
 
-                            <li><a href="#">Marketing and brand building</a></li>
+                            <li><a href="/marketing-and-brand.html">Marketing and brand building</a></li>
 
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#"><span>Team</span> <i
+                    <!-- <li class="dropdown"><a href="#"><span>Team</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="/sandeep-gupta.html">About The Founder</a></li>
@@ -81,8 +85,8 @@
                             <li><a href="#">Our Team</a></li>
 
                         </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
+                    </li> -->
+                    <li><a href="article.html">Articles</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
                 </ul>
@@ -90,30 +94,30 @@
         </div>
     </header>
 
-    <!-- ====== Hero section ====== -->
+
+    <!-- ====== Hero Section ====== -->
+
 
     <section id="hero" class="hero">
-        <div>
-            <div>
+        <div class="swiper heroCarousal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./Assets/img/home/hero-carousal/hero_carousal_1.jpg"
+                        alt="hero_slide_1" srcset=""></div>
+                <div class="swiper-slide"><img src="./Assets/img/home/hero-carousal/hero_carousal_1.jpg"
+                        alt="hero_slide_1" srcset=""></div>
 
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="#4EAB3C" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(77, 122, 140,0.5)" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="#165BA5" />
-                        <use xlink:href="#gentle-wave" x="48" y="6" fill="rgba(213, 231, 242, 0.8)" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#88BD34" />
-                    </g>
-                </svg>
+
+
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
+    </section>
 
+    <section id="nutraworks-intro" class="nutraworks-intro">
         <div class="container">
+
             <div class="center text-center">
                 <h2 data-aos="zoom-in-up" data-aos-delay="">PIONEERING NUTRACEUTICAL EXCELLENCE<br>
 
@@ -130,426 +134,579 @@
                         regulatory advocacy, innovative breakthroughs, and a relentless pursuit of health and
                         wellness.</p>
                 </blockquote>
-                <div class="d-flex" data-aos="zoom-in-up" data-aos-delay="">
-                    <a href="#about" class="btn-get-started">Get Started</a>
 
-                </div>
+            </div>
+
+        </div>
+        <div>
+            <div>
+
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="#4EAB3C" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill=" rgba(213, 231, 242, 0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill=" #88BD34" />
+                        <use xlink:href="#gentle-wave" x="48" y="6" fill="#165BA5" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill=" rgba(77, 122, 140,0.8)" />
+                    </g>
+                </svg>
             </div>
         </div>
     </section>
 
-    <section id="why-us" class="why-us">
 
-        <div class="section-header">
-            <h2>HOW WE STAND OUT​</h2>
+    <section class="how-we-stand-out" id="how-we-stand-out">
+        <div class="how-we-stand-out-inner">
+            <div class="wrapper">
+                <div class="slide">
+                    <div class="why-us-item active"
+                        style="background-image: url(/Assets/img/home/how-we-stand-out/bench_to_bedside.png);">
+                        <div class="why-us-item-desc">
+                            <h3>Bench to Bedside</h3>
+                            <p>We provide End to End Solutions right from Ideation to Commercialization with all the
+                                expertise​</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="why-us-item"
+                        style="background-image: url(/Assets/img/home/how-we-stand-out/integrated_business.png);">
+                        <div class="why-us-item-desc">
+                            <h3>Integrated Business Model​</h3>
+                            <p>Process and Protocol Driven​
+                                Single Point of Contact​
+                                Post deliver services​
+                                Turn Around timed response​
+                                Integrated Business Model ​
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="why-us-item"
+                        style="background-image: url(/Assets/img/home/how-we-stand-out/expert_experiance.png);">
+                        <div class="why-us-item-desc">
+                            <h3>Experts and Experience​
+                            </h3>
+                            <p>Plethora of Experience & Expertise</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="why-us-item"
+                        style="background-image: url(/Assets/img/home/how-we-stand-out/business_network.png);">
+                        <div class="why-us-item-desc">
+                            <h3>Business Network​</h3>
+                            <p>Strongest Network with Top Management as well as the executors​</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="why-us-item"
+                        style="background-image: url(/Assets/img/home/how-we-stand-out/boutique\ _of_services.png);">
+                        <div class="why-us-item-desc">
+                            <h3>Boutique of services​​</h3>
+                            <p>Pioneers of integrating a canopy of services in association with varied partners with
+                                well
+                                recognized, certified and accredited facilities providing varied & Innovative dosage ​​
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pagination"></div>
+        </div>
+
+    </section>
+
+
+    <section class="how-we-stand-out-explain">
+
+
+        <div class="swiper why-us-info">
+            <div class="parallax-bg" style="
+              background-image: url(/Assets/img/home/tailered_bench_home_page.jpg);
+            " data-swiper-parallax="-23%"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide why-us-info-slide">
+                    <div class="why-us-slide">
+                        <div class="title" data-swiper-parallax="-300">
+                            <h2>Bench to Bedside</h2>
+                        </div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                Bench to bedside signifies an end-to-end process, seamlessly bridging scientific
+                                research at the laboratory bench with the creation of consumer-ready products at the
+                                bedside. This holistic approach ensures that nutritional innovations swiftly transition
+                                from scientific discovery to practical application, optimizing health benefits for
+                                end-users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide why-us-info-slide">
+                    <div class="why-us-slide">
+
+                        <div class="title" data-swiper-parallax="-300">
+                            <h2>Integrated Business Model</h2>​
+                        </div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                An integrated business model is process and protocol-driven, ensuring seamless
+                                coordination from raw material sourcing to final product delivery. This approach
+                                optimizes efficiency, quality, and compliance at every stage, fostering a streamlined
+                                and holistic framework. By prioritizing systematic processes, companies can enhance
+                                product development, meet regulatory standards, and ultimately deliver safe and
+                                effective nutraceutical solutions to consumers.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide why-us-info-slide">
+                    <div class="why-us-slide">
+                        <div class="title" data-swiper-parallax="-300">
+                            <h2>Experts and Experience​</h2>
+                        </div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                In the dynamic nutraceutical industry, success hinges on the synergy of experts and
+                                experience. Seasoned professionals contribute invaluable insights, while a wealth of
+                                collective experience guides product innovation and quality assurance. This
+                                collaborative approach ensures that nutritional products not only meet stringent
+                                standards but also deliver optimal health benefits, establishing trust and credibility
+                                in an ever-evolving market.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide why-us-info-slide">
+                    <div class="why-us-slide">
+                        <div class="title" data-swiper-parallax="-300">
+                            <h2>Business Network​</h2>
+                        </div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                In the nutraceutical industry, a robust business network is paramount for success.
+                                Companies thrive by cultivating the strongest network, connecting manufacturers,
+                                distributors, and retailers. This interconnected ecosystem facilitates the seamless flow
+                                of innovative products from conception to consumer. A strong network fosters
+                                collaboration, accelerates market access, and ensures the industry's continuous growth
+                                and adaptability to evolving health trends.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide why-us-info-slide">
+                    <div class="why-us-slide">
+                        <div class="title" data-swiper-parallax="-300">
+                            <h2>Boutique of services​​</h2>
+                        </div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>
+                                A 'Boutique of Services' emerges as a cornerstone, offering an integration a canopy of
+                                services. This bespoke approach harmonizes scientific expertise, product development,
+                                and consumer engagement. Tailored to meet diverse health needs, this boutique paradigm
+                                exemplifies a holistic commitment to wellness, bridging the gap between cutting-edge
+                                research and consumer well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="shadow"></div>
 
         </div>
 
-        <section class="why-us-section">
-            <div class="custom-carousel">
-                <div class="why-us-item active"
-                    style="background-image: url(/assets/imgs/home/bench_to_bedside_3\ 1.png);">
-                    <div class="why-us-item-desc">
-                        <h3>Bench to Bedside</h3>
-                        <p>We provide End to End Solutions right from Ideation to Commercialization with all the
-                            expertise​</p>
-                    </div>
-                </div>
-                <div class="why-us-item" style="background-image: url(/assets/imgs/home/integrated_business.png);">
-                    <div class="why-us-item-desc">
-                        <h3>Integrated Business Model​</h3>
-                        <p>Process and Protocol Driven​
-                            Single Point of Contact​
-                            Post deliver services​
-                            Turn Around timed response​
-                            Integrated Business Model ​
-                        </p>
-                    </div>
-                </div>
-                <div class="why-us-item" style="background-image: url(/assets/imgs/home/expert_experiance.png);">
-                    <div class="why-us-item-desc">
-                        <h3>Experts and Experience​
-                        </h3>
-                        <p>Plethora of Experience & Expertise</p>
-                    </div>
-                </div>
-                <div class="why-us-item" style="background-image: url(/assets/imgs/home/business_network.png);">
-                    <div class="why-us-item-desc">
-                        <h3>Business Network​</h3>
-                        <p>Strongest Network with Top Management as well as the executors​</p>
-                    </div>
-                </div>
-                <div class="why-us-item" style="background-image: url(/assets/imgs/home/boutique\ _of_services.png);">
-                    <div class="why-us-item-desc">
-                        <h3>Boutique of services​​</h3>
-                        <p>Pioneers of integrating a canopy of services in association with varied partners with well
-                            recognized, certified and accredited facilities providing varied & Innovative dosage ​​</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+
 
 
     </section>
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-        <div class="container" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center">
-                    <h3>Tailored, Bench to Bedside approach for all your business requirements</h3>
-                    <p>NUTRAWORKS offers a World-class, tailored 'Bench to Bedside' approach, uniquely designed to meet
-                        all your
-                        business requirements in the nutraceutical, health, wellness, and personal care industry. This
-                        strategic
-                        approach ensures that from the very first stage of product development to the final delivery,
-                        every step
-                        is curated with expert precision and with the best opinion in the field. Our approach is
-                        synonymous with
-                        delivering first-time innovations and best-in-class solutions, setting a benchmark in the
-                        nutraceutical
-                        sector. With NUTRAWORKS, you are partnering with a team of experts committed to excellence,
-                        ensuring that
-                        your nutraceutical journey is not only successful but also pioneering in its field</p>
-                    <a class="cta-btn" href="#">Schedule Consultation</a>
+
+    <section>
+        <div class="details">
+            <div class="container" data-aos="fade-up" data-aos-delay="300">
+                <div class="section-header">
+                    <h2>Trusted by Leading Nutraceutical Companies</h2>
+
                 </div>
-            </div>
-
-        </div>
-    </section><!-- End Call To Action Section -->
-
-
-
-    <section class="why-choose-main">
-
-        <div class="why-choose-section">
-            <div class="why-choose-slide-user-img">
-                <div class="swiper-container why-choose-gallery">
+                <div class="swiper companies">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="u3" src="./assets/imgs/home/tailered_consulting.jpg" alt="">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/boots.png" class="" alt="">
+
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="u1" src="./assets/imgs/home/expertise_nutra_industry.jpg" alt="">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/dr_reddy.png" class="" alt="">
+
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="u2" src="./assets/imgs/home/stay_informed_business_report.jpg" alt="">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/gsk.png" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/intas.png" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/Ipca_Labs_logo.png" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/lupin.png" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/merck.jpg" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/novartis.png" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/pfizer.jpg" class="" alt="">
+
+                                </div>
+                            </div>
                         </div>
 
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
 
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/png_health.png" class="" alt="">
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card m-3" style="width: 200px;height: 100px;">
+
+                                <div class="card-body">
+                                    <img src="/Assets/img/home/company/Sun_Pharma_logo.png" class="" alt="">
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+
             </div>
-            <div class="why-choose-info">
-                <div class="swiper-container why-choose">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper ">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="slide">
-                                <img class="slide-icon" src="https://md-aqil.github.io/images/slide.png" alt="">
-                                <h4 class="card-title">Tailored Consulting Solutions</h4>
-                                <p>At NutraWorks, we understand that every business is unique. That's why we provide
-                                    tailored
-                                    consulting solutions that are designed to meet your specific business needs. Our
-                                    team of
-                                    experts will work with you to identify areas for improvement and implement
-                                    solutions
-                                    that will
-                                    help you achieve your goals.</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide">
-                                <img class="slide-icon" src="https://md-aqil.github.io/images/slide.png" alt="">
+        </div>
 
-                                <h4 class="card-title">Expertise in Nutraceutical Industry</h4>
-                                <p>Our team of consultants has extensive experience in the nutraceutical industry
-                                    and
-                                    understands the challenges that businesses in this sector face. We use our
-                                    expertise
-                                    to help
-                                    you navigate the complexities of the industry and achieve success.</p>
+    </section>
 
 
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide">
-                                <img class="slide-icon" src="https://md-aqil.github.io/images/slide.png" alt="">
+    <section class="appointment">
+        <div class="container appointment-inner">
+            <div class="appoitment-img"><img src="/Assets/img/home/man_with_calendar.png" alt=""></div>
+            <div class="appoitment-text">
 
-                                <h4 class="card-title">Stay Informed with Our Business Reports</h4>
-                                <p>Our easy-to-read business reports provide you with the information you need to
-                                    make
-                                    informed
-                                    business decisions. Click here to learn more and schedule a consultation.</p>
-
-
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination swiper-pagination-white"></div>
-
-                </div>
+                <h2>Strategic <span>Nutraceutical</span> Solutions
+                </h2>
+                <a href="">Book Your Appointment Now</a>
             </div>
+
         </div>
     </section>
-    <div class="details">
-        <div class="container" data-aos="fade-up" data-aos-delay="300">
-            <div class="section-header">
-                <h2>Trusted by Leading Nutraceutical Companies</h2>
 
-            </div>
-            <div class="row">
-                <div class="col-lg-12 d-flex align-items-center justify-content-center flex-wrap">
-                    <div class="card m-3" style="width: 200px;height: 100px;">
-
-                        <div class="card-body">
-                            <img src="./assets/imgs/home/img-1.png" class="object-fit-cover w-100 h-100" alt="">
-
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 200px;height: 100px;">
-
-                        <div class="card-body">
-                            <img src="./assets/imgs/home/img-2.png" class="object-fit-cover w-100 h-100" alt="">
-
-                        </div>
-                    </div>
-                    <div class="card m-3" style="width: 200px;height: 100px;">
-
-                        <div class="card-body">
-                            <img src="./assets/imgs/home/img-3.png" class="object-fit-cover w-100 h-100" alt="">
-
-                        </div>
-                    </div>
-                    <div class="card  m-3" style="width: 200px;height: 100px;">
-
-                        <div class="card-body">
-                            <img src="./assets/imgs/home/img-4.png" class="object-fit-cover w-100 h-100" alt="">
-
-                        </div>
-                    </div>
-                    <div class="card  m-3" style="width: 200px;height: 100px;">
-
-                        <div class="card-body">
-                            <img src="./assets/imgs/home/img-5.png" class="object-fit-cover w-100 h-100" alt="">
-
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    </section><!-- End Features Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container" data-aos="fade-up">
-
+    <section class="testimonials">
+        <div class="container">
             <div class="section-header">
                 <h2>Testimonials</h2>
 
             </div>
+            <div class="swiper testimonials-main">
+                <div class="testimonial-wrapper swiper-wrapper">
 
-            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img"><img src="/Assets/img/home/profile/man.jpg" alt="">
+                                <h2 class="testimonial-name">Mr Guha</h2>
+                                <p class="company"><span>Zuventus Healthcare Limited
+                                    </span></p>
+                                <p class="designation"><span>MD & CEO</span> </p>
+                            </div>
+                            <div class="testimonial-info">
+                                <div>
+                                    <p>I have had the pleasure of working closely with Nutraworks, and I am consistently
+                                        impressed by their unparalleled expertise in the nutraceuticals, health, and
+                                        wellness industry. Their end-to-end consultancy services, regulatory advocacy,
+                                        and marketing strategies, are truly comprehensive and forward-thinking.
+                                        Nutraworks has a dedicated team of professionals who bring a wealth of knowledge
+                                        and innovation to every project. Their commitment to excellence and client
+                                        success makes them a trusted partner in navigating the complexities of the
+                                        health and wellness market. I wholeheartedly recommend Nutraworks for anyone
+                                        seeking top-notch consultancy services in the field."</p>
+                                </div>
+                            </div>
 
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
-                                rhoncus. Accusantium
-                                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                            </p>
-                            <div class="profile mt-auto">
-                                <img src="assets/imgs/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                            </div>
                         </div>
-                    </div><!-- End testimonial item -->
 
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                cillum eram malis
-                                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                            </p>
-                            <div class="profile mt-auto">
-                                <img src="assets/imgs/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                            </div>
-                        </div>
-                    </div><!-- End testimonial item -->
+                    </div>
 
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img"><img src="/Assets/img/home/profile/man.jpg" alt="">
+                                <h2 class="testimonial-name">Rini Sanyal</h2>
+                                <p class="company"><span>Herbalife
+                                    </span></p>
+                                <p class="designation"><span>Director, Global Regulatory Affairs & Product Compliance
+                                    </span> </p>
                             </div>
-                            <p>
-                                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
-                                duis minim
-                                tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                            </p>
-                            <div class="profile mt-auto">
-                                <img src="assets/imgs/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
+                            <div class="testimonial-info">
+                                <div>
+                                    <p>Navigating the regulatory landscape in the health industry can be challenging,
+                                        but with Nutraworks, it becomes a streamlined process. Their team of regulatory
+                                        experts demonstrates a profound understanding of compliance requirements,
+                                        ensuring a smooth journey through complex regulations. Nutraworks' commitment to
+                                        staying abreast of industry changes makes them an invaluable partner for anyone
+                                        seeking regulatory excellence in the nutraceutical sector
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </div><!-- End testimonial item -->
 
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
-                                minim velit
-                                minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum
-                                veniam.
-                            </p>
-                            <div class="profile mt-auto">
-                                <img src="assets/imgs/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                            </div>
                         </div>
-                    </div><!-- End testimonial item -->
 
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                    class="bi bi-star-fill"></i>
+                    </div>
+
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img"><img src="/Assets/img/home/profile/man.jpg" alt="">
+                                <h2 class="testimonial-name">Vivek Tannan</h2>
+                                <p class="company"><span>Geltec Pvt. Ltd.
+                                    </span></p>
+                                <p class="designation"><span>Executive Director</span> </p>
                             </div>
-                            <p>
-                                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                veniam enim culpa
-                                labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                                cillum quid.
-                            </p>
-                            <div class="profile mt-auto">
-                                <img src="assets/imgs/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
+                            <div class="testimonial-info">
+                                <div>
+                                    <p>I am a client of Nutraworks, and the experience has been nothing short of
+                                        exceptional. From ideation to market launch, Nutraworks has been instrumental in
+                                        the success of our health and wellness products. The personalized approach,
+                                        attention to detail, and unwavering commitment to client satisfaction set them
+                                        apart. Having known Sandeep for more than 20 years, his insights on product
+                                        ideation, development, and expertise in Technical and Regulatory aspects have
+                                        been invaluable in helping our company, Geltec, launch unique and successful
+                                        products. I enthusiastically recommend Nutraworks to anyone looking for a
+                                        trusted partner in bringing innovative health solutions to market</p>
+                                </div>
                             </div>
+
                         </div>
-                    </div><!-- End testimonial item -->
+
+                    </div>
+
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img"><img src="/Assets/img/home/profile/man.jpg" alt="">
+                                <h2 class="testimonial-name">Yash Sharma</h2>
+                                <p class="company"><span>Makin Laboratories Pvt. Ltd.
+                                    </span></p>
+                                <p class="designation"><span>Managing Director</span> </p>
+                            </div>
+                            <div class="testimonial-info">
+                                <div>
+                                    <p>Nutraworks has been an invaluable partner in our journey within the health and
+                                        wellness industry. Their strategic guidance and seamless integration with
+                                        multiple marketing companies have played a pivotal role in our business success.
+                                        The team's responsiveness and industry foresight make Nutraworks the go-to
+                                        consultancy for navigating the dynamic landscape of nutraceuticals. I
+                                        wholeheartedly endorse Nutraworks for any enterprise looking to thrive in this
+                                        competitive market.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img"><img src="/Assets/img/home/profile/man.jpg" alt="">
+                                <h2 class="testimonial-name">Sameer Maheshwari</h2>
+                                <p class="company"><span>HealthKart
+                                    </span></p>
+                                <p class="designation"><span>Founder & CEO</span> </p>
+                            </div>
+                            <div class="testimonial-info">
+                                <div>
+                                    <p>As a healthcare professional, I've had the privilege of collaborating with
+                                        Nutraworks on various projects. Their in-depth knowledge of nutraceuticals and
+                                        commitment to product quality is commendable. Nutraworks' emphasis on
+                                        evidence-based solutions and dedication to promoting health aligns seamlessly
+                                        with our mission. I highly recommend Nutraworks for their exceptional
+                                        consultancy services</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-img"><img src="/Assets/img/home/profile/man.jpg" alt="">
+                                <h2 class="testimonial-name">Krishna Prakash</h2>
+                                <p class="company"><span>
+                                    </span></p>
+                                <p class="designation"><span>IPS</span> </p>
+                            </div>
+                            <div class="testimonial-info">
+                                <div>
+                                    <p>As a dedicated fitness enthusiast, my journey has been significantly enhanced by
+                                        the guidance and support of Nutraworks. Their expertise in crafting personalized
+                                        fitness regimes, complete with tailored diet and supplementation charts, has
+                                        been a game-changer for me. Nutraworks doesn't just provide generic solutions;
+                                        they take the time to understand individual needs and goals. The result is a
+                                        holistic approach to health and wellness that goes beyond the ordinary. Thanks
+                                        to Nutraworks, I've achieved milestones in my fitness journey that I never
+                                        thought possible. </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-
         </div>
     </section>
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-posts" class="recent-posts">
-        <div class="container" data-aos="fade-up">
 
-            <div class="section-header">
-                <h2>Recent Blog Posts</h2>
+
+    <section class="doping-section">
+        <div class="doping-inner">
+
+            <div class="doping-header">
+                <h2>ARTICLES</h2>
+            </div>
+            <div class="subhead">
+
 
             </div>
-
-            <div class="row gy-5">
-
-                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="post-box">
-                        <div class="post-img"><img src="assets/imgs/blogs/blog-1.jpg" class="img-fluid" alt=""></div>
-                        <div class="meta">
-                            <span class="post-date">Tue, December 12</span>
-                            <span class="post-author"> / Julia Parker</span>
-                        </div>
-                        <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis</h3>
-                        <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores
-                            eum ipsa
-                            est officiis. Modi qui magni est...</p>
-                        <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="post-box">
-                        <div class="post-img"><img src="assets/imgs/blogs/blog-2.jpg" class="img-fluid" alt=""></div>
-                        <div class="meta">
-                            <span class="post-date">Fri, September 05</span>
-                            <span class="post-author"> / Mario Douglas</span>
-                        </div>
-                        <h3 class="post-title">Et repellendus molestiae qui est sed omnis</h3>
-                        <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda.
-                            Quisquam
-                            omnis doloribus...</p>
-                        <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="post-box">
-                        <div class="post-img"><img src="assets/imgs/blogs/blog-3.jpg" class="img-fluid" alt=""></div>
-                        <div class="meta">
-                            <span class="post-date">Tue, July 27</span>
-                            <span class="post-author"> / Lisa Hunter</span>
-                        </div>
-                        <h3 class="post-title">Quia assumenda est et veritati</h3>
-                        <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis
-                            repellat sed quae
-                            consectetur magnam...</p>
-                        <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="post-box">
-                        <div class="post-img"><img src="assets/imgs/blogs/blog-4.jpg" class="img-fluid" alt=""></div>
-                        <div class="meta">
-                            <span class="post-date">Tue, Sep 16</span>
-                            <span class="post-author"> / Mario Douglas</span>
-                        </div>
-                        <h3 class="post-title">Pariatur quia facilis similique deleniti</h3>
-                        <p>Et consequatur eveniet nam voluptas commodi cumque ea est ex. Aut quis omnis sint ipsum earum
-                            quia
-                            eligendi...</p>
-                        <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
-    </section><!-- End Recent Blog Posts Section -->
 
-    </main><!-- End #main -->
+        <div class="news-section">
+            <a href="https://www.nutraingredients-asia.com/Article/2023/03/14/FSSAI-clamps-down-on-non-compliant-nutraceutical-products-and-fake-claims"
+                target="_blank">
+                <div class="news">
+                    <h2>
+                        India Nutra enforcement: Regulator sets sights on non-compliant ingredients, exceeding RDI
+                        levels, and misleading claims
+                    </h2>
+                    <p class=" headline hl4">Source: nutraingredients-asia.com</p>
+                    <p>Posted On: 14-Mar-2023</p>
+                    <p> </p>
+
+
+                </div>
+            </a>
+            <a href="https://www.nutraingredients-asia.com/Article/2023/11/16/paradigm-shift-in-perception-of-men-s-fitness-sparks-new-opportunities-for-bone-and-joint-category"
+                target="_blank">
+                <div class="news">
+                    <h2>
+                        Paradigm shift in perception of men’s fitness sparks new opportunities for bone and joint
+                        category </h2>
+                    <p class="headline hl4">Source: nutraingredients-asia.com</p>
+                    <p>Posted On: 16-Nov-2023</p>
+
+                    <p>
+                    </p>
+
+
+                </div>
+            </a><a
+                href="https://www.nutraingredients-asia.com/Article/2023/09/27/india-needs-to-redefine-nutrition-amid-huge-scope-for-nutra-growth-says-expert-panel"
+                target="_blank">
+                <div class="news">
+                    <h2>
+                        Scratching the surface’: Why India needs to redefine nutrition amid huge scope for nutra growth
+                    </h2>
+                    <p class="headline hl4">Source: nutraingredients-asia.com</p>
+                    <p>Posted On: 27-Sep-2023</p>
+                    <p> </p>
+
+
+                </div>
+            </a><a
+                href="https://www.nutraingredients-asia.com/Article/2023/03/13/experts-launch-nutra-compendium-to-boost-knowledge-among-india-s-industry-players"
+                target="_blank">
+                <div class="news">
+                    <h2>
+                        Filling the gap: Experts seek to boost knowledge of ingredient science and functions in India’s
+                        nutra sector
+                    </h2>
+                    <p class="headline hl4">Source: seattletimes.com</p>
+                    <p>Posted On:March 1, 2019</p>
+
+                    <p></p>
+
+
+                </div>
+            </a>
+        </div>
+    </section>
+
 
     <!-- ======= Footer ======= -->
     <footer class="padding_4x">
@@ -577,7 +734,7 @@
                 <p><i class="bi bi-geo-alt footer-icon"></i>1B/301,Siddhachal Apartment
                     Vasant Vihar, Thane (W) Maharashtra- 400601</p>
                 <p><i class="bi bi-telephone footer-icon"></i>+(91) 98204 13479</p>
-                <p><i class="bi bi-envelope footer-icon"></i>info@enacnetwork.com
+                <p><i class="bi bi-envelope footer-icon"></i>
 
                     sandeep.gupta@nutraworks.in</p>
 
@@ -605,7 +762,7 @@
                 </fieldset>
             </section> -->
         </div>
-        <div class="flex">
+        <div class="flex ">
             <section class="flex-content padding_1x">
                 <p>Copyright ©2023 All rights reserved || NutraWorks private limited.</p>
             </section>
@@ -620,13 +777,12 @@
     </footer>
 
     <!-- main js -->
-    <script src="./assets/js/app.js"></script>
+    <script src="/Assets/Js/index.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
 </body>
 
 </html>
