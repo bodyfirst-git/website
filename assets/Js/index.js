@@ -158,6 +158,44 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  var swiper = new Swiper(".d2cSlider", {
+    loop: true,
+    slidesPerView: 1,
+    noSwiping: true,
+    centeredSlides: true,
+    spaceBetween: 30,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  new Swiper(".rank-text", {
+    direction: "vertical",
+    speed: 100,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    slidesPerView: "auto",
+  });
+
+  new Swiper(".rank-scroller", {
+    direction: "vertical",
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    autoplayDisableOnInteraction: false,
+    slidesPerView: "auto",
+  });
+
   /**
    * Animation on scroll function and init
    */
