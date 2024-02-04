@@ -3861,10 +3861,11 @@ body {
   height: 120px;
   border-radius: 50%;
   margin: 20px;
+  background-color: red;
 }
 
 .age-tabs li.active a {
-  border: none !important;
+  background-color: red;
 }
 .age-tabs li a img {
   width: 100%;
@@ -3872,9 +3873,9 @@ body {
   border-radius: 50%;
 }
 
-.age-tabs {
+/* .age-tabs {
   border: none !important;
-}
+} */
 
 .d2c a {
   position: relative;
