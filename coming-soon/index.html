@@ -1,149 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow: hidden;
+      }
+
+      .nutraworks-intro {
+        padding-top: 0;
+        overflow: hidden;
+        position: relative;
+        min-height: 100vh;
+        font-family: var(--font-primary);
+      }
+      .inner-nutra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .company-logo {
+        width: 250px;
+        height: 150px;
+        padding: 20px;
+      }
+
+      .company-logo img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .nutraworks-intro h2 {
+        padding-top: 100px;
+        font-size: 3rem;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      .typewriter-effect h1 {
+        width: fit-content;
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: 0.15em;
+        animation: typing 5s steps(40, end), blink-caret 0.75s infinite;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      .coming-soon {
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
         }
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            overflow: hidden;
+        to {
+          width: 100%;
+        }
+      }
+
+      .waves {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 50vh;
+        margin-bottom: -7px; /*Fix for safari gap*/
+        min-height: 100px;
+        max-height: 150px;
+      }
+
+      /* Animation */
+
+      .parallax > use {
+        animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+      }
+      .parallax > use:nth-child(1) {
+        animation-delay: -2s;
+        animation-duration: 7s;
+      }
+      .parallax > use:nth-child(2) {
+        animation-delay: -3s;
+        animation-duration: 10s;
+      }
+      .parallax > use:nth-child(3) {
+        animation-delay: -4s;
+        animation-duration: 13s;
+      }
+      .parallax > use:nth-child(4) {
+        animation-delay: -5s;
+        animation-duration: 20s;
+      }
+      .parallax > use:nth-child(5) {
+        animation-delay: -7s;
+        animation-duration: 30s;
+      }
+      @keyframes move-forever {
+        0% {
+          transform: translate3d(-90px, 0, 0);
+        }
+        100% {
+          transform: translate3d(85px, 0, 0);
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
         }
 
-        .nutraworks-intro {
-            min-height: 100vh;
+        50% {
+          border-color: orange;
         }
+      }
 
-        .nutraworks-intro {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-
-        }
-
-        .company-logo {
-            width: 250px;
-            height: 150px;
-        }
-
-        .company-logo img {
-            width: 100%;
-            height: 100%;
-        }
-
-
-
+      @media screen and (max-width: 750px) {
         .nutraworks-intro h2 {
-            padding-top: 100px;
-            font-size: 3rem;
-            font-weight: 900;
-
+          font-size: 2rem;
         }
 
+        .nutraworks-intro h1 {
+          font-size: 1.5rem;
 
+          letter-spacing: 5px;
+        }
 
-
+        .nutraworks-intro p {
+          font-size: 1.1rem;
+          padding: 0;
+        }
 
         .typewriter-effect h1 {
-            width: fit-content;
-            overflow: hidden;
-            border-right: 0.15em solid orange;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: 0.15em;
-            animation: typing 5s steps(40, end), blink-caret 0.75s infinite;
-            font-size: 4rem;
-            font-weight: 700;
+          font-size: 1rem;
         }
-
-
-        .coming-soon {
-            font-size: 3rem;
-            font-weight: 600;
-            padding: 20px;
-        }
-
-        /* The typing effect */
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: orange;
-            }
-        }
-
-        @media screen and (max-width: 750px) {
-            .nutraworks-intro h2 {
-                font-size: 2rem;
-            }
-
-            .nutraworks-intro h1 {
-                font-size: 1.5rem;
-
-                letter-spacing: 5px;
-            }
-
-            .nutraworks-intro p {
-                font-size: 1.1rem;
-                padding: 0;
-            }
-
-            .typewriter-effect h1 {
-                font-size: 1rem;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="main-section">
-        <div class="main-inner nutraworks-intro">
-            <div class="company-logo">
-                <img src="/coming-soon/img/Nutraworks Logo.png" alt="">
+      <div class="main-inner nutraworks-intro">
+        <div class="inner-nutra">
+          <div class="company-logo">
+            <img src="img/Nutraworks Logo.png" alt="" />
+          </div>
+          <div class="container">
+            <div class="center text-center">
+              <h2>PIONEERING NUTRACEUTICAL EXCELLENCE<br /></h2>
+
+              <div
+                class="typewriter-effect"
+                style="color: #88bd34"
+                data-aos="zoom-in-up"
+              >
+                <h1>#OPINION THAT WORKS</h1>
+              </div>
+              <p class="coming-soon">Coming soon.....!</p>
             </div>
-            <div class="">
-                <div class="center text-center">
-                    <h2>PIONEERING NUTRACEUTICAL EXCELLENCE<br>
-
-                    </h2>
-
-                    <div class="typewriter-effect" style="color: #88BD34;" data-aos="zoom-in-up">
-                        <h1>#OPINION THAT WORKS</h1>
-                    </div>
-                    <p class="coming-soon">
-                        Coming soon.....! </p>
-
-                </div>
-            </div>
+          </div>
         </div>
+        <div>
+          <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#4EAB3C" />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill=" rgba(213, 231, 242, 0.5)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill=" #88BD34" />
+                <use xlink:href="#gentle-wave" x="48" y="6" fill="#165BA5" />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="7"
+                  fill=" rgba(77, 122, 140,0.8)"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
