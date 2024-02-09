@@ -1127,12 +1127,12 @@ Vision and mission
 }
 
 .mission-text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .mission-text {
-  flex: 1 1 40rem;
+  flex: 1 1 50rem;
   padding: 0 50px;
 }
 
@@ -1141,7 +1141,7 @@ Vision and mission
 }
 
 .mission-img {
-  flex: 1 1 40rem;
+  flex: 1 1 30rem;
 }
 
 .mission-img img {
@@ -2710,24 +2710,29 @@ body {
   }
 }
 
+.card_inform-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .card_inform {
   cursor: pointer;
-  margin: 50px;
+  margin: 20px;
   border-radius: 3px;
-  perspective: 1000px;
+  font-family: var(--font-primary);
 }
 
 .card_inform__inner {
   color: #000000;
-
   height: 450px;
   width: 300px;
-
   display: flex;
   border-radius: 10px;
-
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  flex-grow: 1;
 }
 
 .card_inform:hover .card_inform__inner {
@@ -2745,18 +2750,7 @@ body {
 .card_inform__content--back {
   transform: rotateY(180deg);
   padding: 18px;
-
   height: 100%;
-}
-
-.card_inform-contain {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.column {
-  flex-direction: column;
 }
 
 .card_inform_content--front {
@@ -2764,46 +2758,41 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #dddddd;
-  border-radius: 30px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.card_inform-contain-img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-
-.card_inform-contain-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
-.card_inform_content--front h3 {
+.card_inform_content--front .content h2 {
   margin: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-size: larger;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.card_inform__content--back p {
+.card_inform_content--front .content p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card_inform__content--back .content p {
   text-align: justify;
   padding-top: 10px;
-}
-
-.img-container {
-  padding-top: 15px;
-  margin-bottom: -50px;
-  border-radius: 20px;
-  overflow: hidden;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .skewed {
-  width: 250px;
-  height: 320px;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
-  overflow: hidden;
 }
 
 #img {
@@ -2812,11 +2801,13 @@ body {
   background-size: 100%;
   background-position: center;
   transition: all 0.3s ease;
+  border-radius: 20px;
 }
 
 #img img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 #img:hover {
@@ -2824,31 +2815,13 @@ body {
 }
 
 .content {
-  width: 300px;
+  width: 100%;
   padding-top: 50px;
   border-radius: 5px;
-  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.content h2 {
-  font-family: var(--font-primary);
-  font-size: 25px;
-  font-weight: 900;
-  text-align: center;
-  padding-top: 10px;
-
-  color: #353535;
-}
-
-.content p {
-  font-size: 22px;
-  font-weight: 800;
-  margin-top: 1px;
-  color: #353535;
 }
 
 .content .links {
@@ -2889,23 +2862,6 @@ body {
 .card_inform__content--back li {
   font-size: 1.2rem;
   list-style-type: none;
-}
-
-@media only screen and (max-width: 580px) {
-  .card_inform-contain {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .card_inform__inner {
-    width: 80%;
-    margin: auto;
-  }
-
-  .card_inform {
-    margin: 10px auto;
-    width: 100%;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -4326,7 +4282,7 @@ body {
 }
 
 .a-team-card {
-  width: 95%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -4335,24 +4291,24 @@ body {
 }
 
 .left-side-a-team {
-  flex: 1 1 30rem;
+  flex: 1 1 20rem;
 }
 
 .right-side-a-team {
-  flex: 1 1 50rem;
-}
-
-.right-side-a-team ul {
-  font-size: 1.1rem;
-  font-weight: 500;
+  flex: 1 2 40rem;
+  padding: 20px;
 }
 
 .right-side-a-team ul li {
   padding: 5px;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font-primary);
 }
 
 .left-side-card-association {
-  width: 95%;
+  width: 100%;
   margin: auto;
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -4384,14 +4340,23 @@ body {
 }
 
 .partner-logos {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
-.right-side-card-association img {
-  width: 150px;
-  height: 150px;
+.partner-logo {
+  width: 250px;
+  height: 180px;
+}
+
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 20px;
 }
 
 .awards {
@@ -4613,4 +4578,79 @@ marquee b::after {
   width: 0.75rem;
   margin-left: 0.5rem;
   background-color: #002347;
+}
+
+.a-team-main {
+  width: 100%;
+  background: linear-gradient(
+    89.9deg,
+    rgb(208, 246, 255) 0.1%,
+    rgb(255, 237, 237) 47.9%,
+    rgb(255, 255, 231) 100.2%
+  );
+}
+
+.business-idea-product-info .business-idea-logo {
+  width: 100%;
+  height: 50px;
+}
+
+.business-idea-product-info .business-idea-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partner-logo {
+  width: 200px;
+  height: 200px;
+}
+
+.partner-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* .business-idea-product
+  .cards:nth-child(1)
+  .business-idea-product-info
+  .business-idea-logo {
+  padding: 10px;
+} */
+
+.management-team {
+  width: 100%;
+  height: 100%;
+}
+
+.management {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.management-card {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  padding: 40px;
+  width: 300px;
+  height: 200px;
+}
+
+.management-card span {
+  position: absolute;
+  font-size: 80px;
+  top: -25%;
+  left: -10%;
+  font-weight: 900;
+  color: #88bd34;
+}
+.management-card p {
+  font-size: 1rem;
+  font-weight: 700;
 }

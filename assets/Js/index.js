@@ -236,9 +236,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const texts = [
-    "Game changer & Enabler",
+    "Game Changer & Enabler",
     "Strategist and Pacemaker",
-    "Nutraceutical evangelist",
+    "Nutraceutical Evangelist",
     "Market Intelligence",
     "Mentor",
     "Regulatory Expert",
