@@ -754,6 +754,12 @@ footer .footer-inner:last-child p {
     transform: translateY(-50%);
     color: #88bd34;
   }
+
+  .intro h1 {
+    color: #002347;
+    font-size: 24px;
+    padding: 10px;
+  }
 }
 
 /* Animation */
@@ -1031,12 +1037,12 @@ footer .footer-inner:last-child p {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 30px;
   margin: 10px;
-  background-image: url("/assets/img/home/tst_bck_1.jpg");
+  background: linear-gradient(
+    44.8deg,
+    rgba(255, 136, 102, 0.67) -53.1%,
+    rgba(255, 221, 136, 0.28) 49%
+  );
 
-  background-size: cover; /* <------ */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100%;
   border-radius: 12px;
   text-align: center;
   padding: 30px;
