@@ -740,6 +740,22 @@ footer .footer-inner:last-child p {
   color: #88bd34;
 }
 
+@media (max-width: 320px) {
+  .line-1 {
+    position: relative;
+    top: 50%;
+    width: 8em;
+    margin: 0 auto;
+    border-right: 2px solid #88bd34;
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    color: #88bd34;
+  }
+}
+
 /* Animation */
 .anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -1016,6 +1032,9 @@ footer .footer-inner:last-child p {
   border-radius: 30px;
   margin: 10px;
   background-image: url("/assets/img/home/tst_bck_1.jpg");
+
+  background-size: cover; /* <------ */
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 12px;
