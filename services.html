@@ -2,18 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- favicons -->
+    <title>NutraWorks | Pioneers Nutraceutical Excellence</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-    <link href="./assets/imgs/icons/favicon-32x32.png" rel="icon">
-    <link href="./assets/imgs/icons/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-    <!-- main css -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -21,80 +27,67 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
-    <title>Nutraworks</title>
 
 </head>
 
-<body>
+<body class="page-index">
 
-    <!-- ========header======== -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-
-
-    <header id="header" class="header d-flex align-center fixed-top">
-        <div class="top-nav container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo">
-                <img src="./assets/img/home/logo/Nutraworks Logo.png" alt="Nutraworks Logo">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/home/logo/Nutraworks Logo.png" alt="">
             </a>
+
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
             <nav id="navbar" class="navbar">
                 <ul class="">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li class="dropdown"><a href="#"><span>About Us</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <li class="dropdown">
+                        <a href="#"><span>About Us</span>
+                            <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-
                             <li><a href="/about-founder.html">About Founder</a></li>
 
                             <li><a href="/vision-mission.html">Vision & Mission</a></li>
 
                             <li><a href="/founder-story.html">Founder Story</a></li>
                             <li><a href="/a-team.html">A Team</a></li>
-
-
-
                         </ul>
                     </li>
                     <li><a href="services.html">Services</a></li>
-                    <li class="dropdown"><a href="#"><span>Business Model</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <li class="dropdown">
+                        <a href="#"><span>Business Model</span>
+                            <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
-                            <li><a href="/D2C.html">D2C Works</a></li>
+                            <li><a href="/d2c-works.html">D2C Works</a></li>
 
-                            <li><a href="/B2B.html">B2B Works</a></li>
-                            <li><a href="/start-up.html">Startup Works</a></li>
+                            <li><a href="/b2b-works.html">B2B Works</a></li>
+                            <li><a href="/startup-works.html">Startup Works</a></li>
 
-                            <li><a href="/marketing-and-brand.html">Marketing and Branding Works</a></li>
-
+                            <li>
+                                <a href="/scientific-marketing-works.html">Scientific Marketing Works</a>
+                            </li>
                         </ul>
                     </li>
-                    <!-- <li class="dropdown"><a href="#"><span>Team</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="/sandeep-gupta.html">About The Founder</a></li>
 
-                            <li><a href="#">Our Team</a></li>
-
-                        </ul>
-                    </li> -->
-                    <li><a href="articles.html">PR & Media News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
+                    <li><a href="articles.html">PR & Media NEWS</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </nav><!-- .navbar -->
 
-    <section class="service-hero">
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+
+    <section class="hero-video">
         <video playsinline autoplay muted loop>
             <source src="./assets/videos/2046790_Hand_Create_Draw_1280x720.mp4" type="video/mp4">
 
@@ -107,10 +100,9 @@
                 Start Right to Achieve Excellency
             </h1>
         </div>
-    </section>
+    </section><!-- End Hero Section -->
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <main id="main">
         <section id="" class="">
             <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
@@ -135,19 +127,19 @@
 
             <div class="services-outer">
 
-                <!-- TurnKey Projects -->
+                <!-- Turnkey Projects -->
 
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
 
                             <div class="content-service">
-                                <h4 class="title">TurnKey Projects</h4>
+                                <h4 class="title">Turnkey Projects</h4>
 
                                 <h5 class="text-warning">Be Great At What You Do​</h5>
                                 <p class="description">
-                                    Our TurnKey Projects service is the epitome of excellence in nutraceutical ventures.
+                                    Our Turnkey Projects service is the epitome of excellence in nutraceutical ventures.
                                     We
                                     provide an
                                     end-to-end, 'Bench to Bedside' approach, encompassing Business & Investment Advocacy
@@ -162,35 +154,35 @@
                                     nutraceutical landscape with unparalleled experience.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
-                                <img src="./assets/img/services/turnkey 1.png" alt="" srcset="">
+                                <img src="./assets/img/services/Turnkey 1.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
                     <div class="service-content">
-                        <div class="service-content-inner">
+                        <div class="service-content-inner main-flex-class">
 
-                            <div class="service-card extra-h2"><img src="./assets/img/services/turnkey-1.jpg" alt=""
+                            <div class="service-card extra-h2"><img src="./assets/img/services/Turnkey-1.jpg" alt=""
                                     srcset="">
                                 <h2>BUSINESS & INVESTMENT ADVOCACY​</h2>
                                 <p>Identifying the potential Business units and Investing at the right time into the
                                     right business verticals​</p>
                             </div>
                             <div class="service-card extra-h2">
-                                <img src="./assets/img/services/turnkey-2.jpg" alt="" srcset="">
+                                <img src="./assets/img/services/Turnkey-2.jpg" alt="" srcset="">
                                 <h2>STARTUP PROJECTS​</h2>
                                 <p>Complete setup, building the business and monitoring the overall growth for
                                     start-ups. Setting up complete process flow of the business​</p>
                             </div>
                             <div class="service-card extra-h2">
-                                <img src="./assets/img/services/turnkey-3.jpg" alt="" srcset="">
+                                <img src="./assets/img/services/Turnkey-3.jpg" alt="" srcset="">
                                 <h2>STRATEGIC ALLIANCES​</h2>
                                 <p>Identifying the right partners for building the business, forming strategic alliances
                                     and maintaining business alliances ​​</p>
                             </div>
                             <div class="service-card extra-h2">
-                                <img src="./assets/img/services/turnkey-4.jpg" alt="" srcset="">
+                                <img src="./assets/img/services/Turnkey-4.jpg" alt="" srcset="">
                                 <h2>KEY OPINION​</h2>
                                 <p>Key opinion that will work in favor of the business. Opinion that is a complete
                                     reliable solution​​​</p>
@@ -211,8 +203,8 @@
 
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Strategic Advocacy</h4>
 
@@ -229,7 +221,7 @@
                                     your venture’s success in the competitive global market</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="./assets/img/services/strategy.png" alt="" srcset="">
                             </div>
@@ -256,8 +248,8 @@
                 <!-- Complete Due Diligence -->
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Complete Due Diligence</h4>
 
@@ -272,14 +264,14 @@
                                     experience and strategic insight.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/due_dilligence 1.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
                     <div class="service-content">
-                        <div class="service-content-inner">
+                        <div class="service-content-inner main-flex-class">
 
                             <div class="service-card extra-h2"><img
                                     src="/assets/img/services/Strategy Advocacy_500X500.png" alt="" srcset="">
@@ -326,18 +318,22 @@
                 <!-- Marketing & Communication -->
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Marketing & Communication
                                 </h4>
 
                                 <h5 class="text-warning">Building Right Communication​</h5>
                                 <p class="description">
-                                    Elevate your Nutraceutical brand with Nutraworks' comprehensive Marketing & Communication solutions. Our expertise spans both online and offline channels, ensuring a holistic approach to engage your audience. Through data-driven D2C strategies, we seamlessly blend digital and traditional marketing avenues, crafting compelling narratives that resonate with your target market.</p>
+                                    Elevate your Nutraceutical brand with Nutraworks' comprehensive Marketing &
+                                    Communication solutions. Our expertise spans both online and offline channels,
+                                    ensuring a holistic approach to engage your audience. Through data-driven D2C
+                                    strategies, we seamlessly blend digital and traditional marketing avenues, crafting
+                                    compelling narratives that resonate with your target market.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/marketing_comm 1.png" alt="" srcset="">
                             </div>
@@ -354,24 +350,34 @@
                     </div>
                 </div>
 
-               
+
 
                 <!-- CUSTOMER PATHWAY MENTORING​ -->
 
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Customer Pathway Mentoring
                                 </h4>
 
-                                <h5 class="text-warning">Channelizing the Right flow of Engagement ​</h5>
+                                <h5 class="text-warning">Channelizing The Right Flow Of Engagement ​</h5>
                                 <p class="description">
-                                    At Nutraworks, we take pride in our unique service offering known as Customer Pathway Mentoring. Our dedicated team of experts specializes in understanding the intricate needs of our customers, guiding them through a strategic & personalized journey that aligns with their preferences and requirements meeting their goals. With a keen focus on deciphering customer insights, we meticulously design and market products that not only meet but exceed expectations. Our Customer Pathway Mentoring goes beyond conventional strategies, ensuring a seamless experience for our clients from conceptualization, market success and monetization. Trust Nutraworks to navigate the intricate paths of customer needs and product development, delivering solutions that resonate with your target audience and just workz</p>
+                                    At Nutraworks, we take pride in our unique service offering known as Customer
+                                    Pathway Mentoring. Our dedicated team of experts specializes in understanding the
+                                    intricate needs of our customers, guiding them through a strategic & personalized
+                                    journey that aligns with their preferences and requirements meeting their goals.
+                                    With a keen focus on deciphering customer insights, we meticulously design and
+                                    market products that not only meet but exceed expectations. Our Customer Pathway
+                                    Mentoring goes beyond conventional strategies, ensuring a seamless experience for
+                                    our clients from conceptualization, market success and monetization. Trust
+                                    Nutraworks to navigate the intricate paths of customer needs and product
+                                    development, delivering solutions that resonate with your target audience and just
+                                    workz</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/man-standing-crossroads-hard-life-choice-new-decision-beginning-start-concept-generative-ai.jpg"
                                     alt="" srcset="">
@@ -386,7 +392,8 @@
                                                 srcset="/assets/img/services/pathway-new.jpg">
                                             <source media="(min-width: 768px)"
                                                 srcset="/assets/img/services/Customer Pathway Mentoring_ 1000 x 1000.jpg">
-                                            <img src="/assets/img/services/pathway-new.jpg" />
+                                            <img
+                                                src="/assets/img/services/Customer Pathway Mentoring_ 1000 x 1000.jpg" />
                                         </picture>
                                     </div>
                                 </div>
@@ -399,12 +406,12 @@
                 <!-- Sourcing Advocacy -->
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Sourcing Advocacy</h4>
 
-                                <h5 class="text-warning">Right Ingredient, Right product with the Right Partner ​
+                                <h5 class="text-warning">Right Ingredient, Right Product with the Right Partner ​
                                 </h5>
                                 <p class="description">
                                     Our Sourcing Advocacy is a testament to our commitment to excellence. We offer
@@ -417,7 +424,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/sourcing.png" alt="" srcset="">
                             </div>
@@ -441,8 +448,8 @@
                 <!-- Proprietary Concepts & Ideas -->
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Proprietary Concepts &
                                     Ideas
@@ -459,45 +466,46 @@
                                     advocacy, safeguarding your innovations with expert patent guidance.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="./assets/img/services/propreitary 1.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
-                    <div class="service-content-inner">
+                    <div class="service-content-inner ">
+                        <div class="service-card-without-p main-flex-class">
+                            <div class="service-card"><img
+                                    src="./assets/img/services/propretary_ideas/formulation_dvlpmnt.jpg" alt=""
+                                    srcset="">
 
-                        <div class="service-card"><img
-                                src="./assets/img/services/propretary_ideas/formulation_dvlpmnt.jpg" alt="" srcset="">
+                                <h2>Formulation Development Ideas​</h2>
+                            </div>
+                            <div class="service-card">
+                                <img src="./assets/img/services/propretary_ideas/new_novel.jpg" alt="" srcset="">
 
-                            <p>Formulation Development Ideas​</p>
+                                <h2>New & Novel Product Concepts​​</h2>
+                            </div>
+                            <div class="service-card">
+                                <img src="./assets/img/services/propretary_ideas/innov_blend.jpg" alt="" srcset="">
+
+                                <h2>Innovative Product Blends​​</h2>
+                            </div>
+                            <div class="service-card">
+                                <img src="./assets/img/services/propretary_ideas/innov_dosage.jpg" alt="" srcset="">
+
+                                <h2>Innovative Dosage Forms & Formats​​</h2>
+                            </div>
+                            <div class="service-card">
+                                <img src="./assets/img/services/propretary_ideas/innov_formulte.jpg" alt="" srcset="">
+
+                                <h2>Formulation Development Ideas​</h2>
+                            </div>
+                            <div class="service-card">
+                                <img src="./assets/img/services/propretary_ideas/patents.jpg" alt="" srcset="">
+
+                                <h2>Patents​​</h2>
+                            </div>
                         </div>
-                        <div class="service-card">
-                            <img src="./assets/img/services/propretary_ideas/new_novel.jpg" alt="" srcset="">
-
-                            <p>New & Novel Product Concepts​​</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="./assets/img/services/propretary_ideas/innov_blend.jpg" alt="" srcset="">
-
-                            <p>Innovative Product Blends​​</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="./assets/img/services/propretary_ideas/innov_dosage.jpg" alt="" srcset="">
-
-                            <p>Innovative Dosage Forms & Formats​​</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="./assets/img/services/propretary_ideas/innov_formulte.jpg" alt="" srcset="">
-
-                            <p>Formulation Development Ideas​</p>
-                        </div>
-                        <div class="service-card">
-                            <img src="./assets/img/services/propretary_ideas/patents.jpg" alt="" srcset="">
-
-                            <p>Patents​​</p>
-                        </div>
-
                     </div>
                 </div>
 
@@ -505,8 +513,8 @@
 
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">CMO Development, Management &
                                     Mentoring</h4>
@@ -525,7 +533,7 @@
                                     partnerships.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="./assets/img/services/cmo.png" alt="" srcset="">
                             </div>
@@ -549,8 +557,8 @@
 
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Regulatory, Scientific &
                                     Technical
@@ -567,13 +575,13 @@
                                     compliances. Our proactive R&D advocacy sets a benchmark in the industry.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/regulatory.png" alt="" srcset="">
                             </div>
                         </div>
-                        <div class="service-content d-flex">
-                            <div class="section-content-inner">
+                        <div class="service-content ">
+                            <div class="section-content-inner main-flex-class">
                                 <div class="regulatory">
                                     <div class="section">
                                         <div class="regulatory-img" style="background-color: #3898D1;"><img
@@ -647,8 +655,8 @@
                 <!-- Government Relations & Corporate Affairs -->
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title">Government Relations &
                                     Corporate
@@ -667,7 +675,7 @@
                                     business with governmental frameworks.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/Frame 1.png" alt="" srcset="">
                             </div>
@@ -676,61 +684,67 @@
 
                 </div>
                 <div class="service-content">
-                    <div class="service-content-inner">
+                    <div class="service-content-inner ">
+                        <div class="service-card-without-p main-flex-class">
+                            <div class="service-card gov-rel-img"><img src="/assets/img/services/govern.png" alt=""
+                                    srcset="">
 
-                        <div class="service-card gov-rel-img"><img src="/assets/img/services/govern.png" alt=""
-                                srcset="">
+                                <h2>Policy Governance​​</h2>
+                            </div>
+                            <div class="service-card gov-rel-img">
+                                <img src="/assets/img/services/regulation-2.png" alt="" srcset="">
 
-                            <p>Policy Governance​​</p>
+                                <h2>Regulation Monitoring and Development​</h2>
+                            </div>
+                            <div class="service-card gov-rel-img">
+                                <img src="/assets/img/services/representation.png" alt="" srcset="">
+
+                                <h2>Representation to the Authorities​​​</h2>
+                            </div>
+                            <div class="service-card gov-rel-img">
+                                <img src="/assets/img/services/grievnce.png" alt="" srcset="">
+
+                                <h2>Grievance handling & Resolution​​​</h2>
+                            </div>
+                            <div class="service-card gov-rel-img">
+                                <img src="/assets/img/services/corp_gifts.png" alt="" srcset="">
+
+                                <h2>Strategic Corporate Gifting​​ Solution</h2>
+                            </div>
                         </div>
-                        <div class="service-card gov-rel-img">
-                            <img src="/assets/img/services/regulation-2.png" alt="" srcset="">
-
-                            <p>Regulation Monitoring and Development​</p>
-                        </div>
-                        <div class="service-card gov-rel-img">
-                            <img src="/assets/img/services/representation.png" alt="" srcset="">
-
-                            <p>Representation to the Authorities​​​</p>
-                        </div>
-                        <div class="service-card gov-rel-img">
-                            <img src="/assets/img/services/grievnce.png" alt="" srcset="">
-
-                            <p>Grievance handling & Resolution​​​</p>
-                        </div>
-                        <div class="service-card gov-rel-img">
-                            <img src="/assets/img/services/corp_gifts.png" alt="" srcset="">
-
-                            <p>Strategic Corporate Gifting​​ Solution</p>
-                        </div>
-
 
                     </div>
                 </div>
 
 
 
-                 <!-- New age approach -->
+                <!-- New age approach -->
 
 
                 <div class="service-inner-box">
-                    <div class="service-content d-flex">
-                        <div class="left-side-content">
+                    <div class="service-content main-flex-class">
+                        <div class="left-side-column content-service-outer">
                             <div class="content-service">
                                 <h4 class="title"><a href="#" class="stretched-link">New age approach</a></h4>
 
                                 <h5 class="text-warning">Digital is the New Normal​</h5>
                                 <p class="description">
-                                    In the dynamic landscape of marketing and branding, the new age approach for promoting nutraceutical products is undeniably digital. Leveraging the power of online platforms, social media, and targeted digital campaigns allows brands to engage with a wider audience, precisely target potential customers, and build a compelling online presence. The digital realm not only provides a versatile space for showcasing the unique attributes of nutraceutical products but also facilitates real-time interaction, customer feedback, and data-driven insights.</p>
+                                    In the dynamic landscape of marketing and branding, the new age approach for
+                                    promoting nutraceutical products is undeniably digital. Leveraging the power of
+                                    online platforms, social media, and targeted digital campaigns allows brands to
+                                    engage with a wider audience, precisely target potential customers, and build a
+                                    compelling online presence. The digital realm not only provides a versatile space
+                                    for showcasing the unique attributes of nutraceutical products but also facilitates
+                                    real-time interaction, customer feedback, and data-driven insights.</p>
                             </div>
                         </div>
-                        <div class="right-side-content">
+                        <div class="right-side-column">
                             <div class="service-img">
                                 <img src="/assets/img/services/digital_transform.png" alt="" srcset="">
                             </div>
                         </div>
                         <div class="service-content">
-                            <div class="service-content-inner">
+                            <div class="service-content-inner main-flex-class">
 
                                 <div class="service-card digital"><img
                                         src="/assets/img/services/propretary_ideas/formulation_dvlpmnt.jpg" alt=""
@@ -793,84 +807,84 @@
 
         </section>
 
+    </main>
 
 
+    <!-- ======= Footer ======= -->
+    <footer class="padding_4x">
+        <div class="container footer-inner">
+            <section class="footer-inner-section">
+                <h3>Quick Links</h3>
+                <a href="./index.html">Home</a>
+                <a href="./services.html">Services</a>
+                <a href="./articles.html">PR & MEDIA NEWS</a>
+                <a href="./contact-us.html">Contact</a>
+            </section>
 
-        <!-- ======= Footer ======= -->
-        <footer class="padding_4x">
-            <div class="flex">
+            <section class="footer-inner-section">
+                <h3>About us</h3>
+                <a href="./about-founder.html">About Founder</a>
+                <a href="./vision-mission.html">Vision & Mission</a>
+                <a href="./founder-story.html">Founder Story</a>
+                <a href="./a-team.html">A Team</a>
+            </section>
+            <section class="footer-inner-section">
+                <h3>Business Model</h3>
+                <a href="./d2c-works.html">D2C Works</a>
+                <a href="./b2b-works.html">B2B Works</a>
+                <a href="./startup-works.html">Startup Works</a>
+                <a href="#">Agencies</a>
+            </section>
+            <section class="footer-inner-section">
+                <h3>Company</h3>
+                <a href="#">Terms of Service </a>
+                <a href="#">Privacy</a>
+            </section>
+            <section class="footer-inner-section">
+                <h3>Contact Us</h3>
+                <p>
+                    <i class="bi bi-geo-alt footer-icon"></i>1B/301,Siddhachal Apartment
+                    Vasant Vihar, Thane (W) Maharashtra- 400601
+                </p>
+                <p><i class="bi bi-telephone footer-icon"></i>+(91) 98204 13479</p>
+                <p>
+                    <i class="bi bi-envelope footer-icon"></i>
 
-                <section class="flex-content padding_1x">
-                    <h3>Quick Links</h3>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Team</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    ceo@nutraworks.in
+                </p>
+            </section>
+        </div>
+        <div class="footer-inner">
+            <section class="footer-inner-section">
+                <p>
+                    Copyright ©2023 All rights reserved || NutraWorks
+                </p>
+            </section>
+            <section class="footer-inner-section">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+            </section>
+        </div>
+    </footer>
+    <!-- End Footer --><!-- End Footer -->
 
-                </section>
-                <section class="flex-content padding_1x">
-                    <h3>Company</h3>
-                    <a href="#">Terms of Service
-                    </a>
-                    <a href="#">Privacy</a>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
+    <div id="preloader"></div>
 
-                </section>
-                <section class="flex-content padding_1x">
-                    <h3>Contact Us</h3>
-                    <p><i class="bi bi-geo-alt footer-icon"></i>1B/301,Siddhachal Apartment
-                        Vasant Vihar, Thane (W) Maharashtra- 400601</p>
-                    <p><i class="bi bi-telephone footer-icon"></i>+(91) 98204 13479</p>
-                    <p><i class="bi bi-envelope footer-icon"></i>info@enacnetwork.com
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-                        sandeep.gupta@nutraworks.in</p>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-                </section>
-                <!-- <section class="flex-content padding_1x">
-                    <h3>Features</h3>
-                    <a href="#">Jobs</a>
-                    <a href="#">Brand assets</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Terms of Service</a>
-                </section> -->
-                <!-- <section class="flex-content padding_1x">
-                    <h3>Resources</h3>
-                    <a href="#">Guides</a>
-                    <a href="#">Research</a>
-                    <a href="#">Experts</a>
-                    <a href="#">Agencies</a>
-                </section> -->
-                <!-- <section class="flex-content padding_1x">
-                    <h3>Newsletter</h3>
-                    <p>You can trust us. we only send promo offers,</p>
-                    <fieldset class="fixed_flex">
-                        <input type="email" name="newsletter" placeholder="Your Email Address">
-                        <button class="footer-btn footer-btn_2">Subscribe</button>
-                    </fieldset>
-                </section> -->
-            </div>
-            <div class="flex">
-                <section class="flex-content padding_1x">
-                    <p>Copyright ©2023 All rights reserved || NutraWorks private limited.</p>
-                </section>
-                <section class="flex-content padding_1x">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""><i class="bi bi-linkedin"></i></a>
-
-                </section>
-            </div>
-        </footer>
-        <!-- main js -->
-        <script src="/assets/Js/index.js"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
 </body>
 
 </html>
